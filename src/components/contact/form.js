@@ -6,7 +6,7 @@ function Form() {
   return (
     <>
         <h1>Formulaire de contact</h1>
-        <Forms name='contact' method='post'>
+        <Forms name='contact' method='post' netlify>
             <input type="hidden" name="form-name" value="contact" />
 
             <label htmlFor='nom'>Nom</label>
