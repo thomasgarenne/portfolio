@@ -6,7 +6,9 @@ function Form() {
   return (
     <>
         <h1>Formulaire de contact</h1>
-        <Forms>
+        <Forms name='contact' method='post'>
+            <input type="hidden" name="form-name" value="contact" />
+
             <label htmlFor='nom'>Nom</label>
             <input type='nom' id='nom' name='nom'/>
             
@@ -16,19 +18,21 @@ function Form() {
             <label htmlFor='text'>Message</label>
             <textarea id='text' name='text'/>
 
-            <button>Envoyer</button>
+            <button type='submit'>Envoyer</button>
         </Forms>
     </>
   )
 }
 
 const Forms = styled.form`
-    width: 500px;
+    width: 600px;
     display: flex;
     flex-direction: column;
-    padding: 30px;
-    border: 1px solid;
-    border-radius: 5px;
+    padding: 40px 0;
+    border-radius: 10px;
+    @media screen and (max-width: 700px) {
+      width: 350px;
+    }
 `;
 
 export default Form

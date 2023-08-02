@@ -36,6 +36,10 @@ const GlobalStyle = createGlobalStyle`
         margin: 20px 0;
     }
 
+    p {
+        text-align: justify;
+    }
+
     input, textarea {
         margin-bottom: 10px;
     }

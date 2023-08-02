@@ -11,7 +11,7 @@ import Footer from '../footer';
 import GlobalStyle from './GlobalStyle';
 
 function Layout({ children }) {
-    const [isLight, setIsLight] = useState(true);
+    const [isLight, setIsLight] = useState(false);
 
     function handleToggleTheme() {
         setIsLight(!isLight);

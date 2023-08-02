@@ -1,29 +1,64 @@
-import React from 'react'
+import React, {  useLayoutEffect, useRef } from 'react'
 
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import { gsap } from 'gsap'
 
 function Pres() {
+  const wrapper = useRef();
+
+  useLayoutEffect(() => {
+      const ctx = gsap
+      .timeline()
+      .to(".un", { duration: 1.5, x: 200, opacity: 1 }, 1)
+      .to(".deux", { duration: 1.5, x: 200, opacity: 1 }, "-=1")
+      .to(".trois", { duration: 1, x: 200, opacity: 1 }, "-=1")
+      .to(".profile", { duration: 1.5, scale: 1 }, "-=2");
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <Wrapper>
+    <Wrapper ref={wrapper}>
     <div>
-      <h1>Hi ! Je suis Thomas</h1>
-      <h3>Etudiant développeur web full stack</h3>
-      <Link to={"/about"}><button>Plus à propos de moi</button></Link>
+      <Title className='un'>Hi ! Je suis Thomas</Title>
+      <Desc className='deux'>Etudiant développeur web full stack</Desc>
+      <Link to={"/about"}><Btn className='trois'>Plus à propos de moi</Btn></Link>
     </div>
-    <Profile src='./assets/images/profil.png' alt='profile' />
+    <Profile src='./assets/images/profil.png' alt='profile' className='profile' />
   </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
   display: flex;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const Profile = styled.img`
   width: 300px;
   border-radius: 50%;
+  transform: scale(0);
 `;
+
+const Title = styled.h1`
+  opacity: 0;
+  margin-left: -200px;
+`;
+
+const Desc = styled.h3`
+  opacity: 0;
+  margin-left: -200px;
+`;
+
+const Btn = styled.button`
+  opacity: 0;
+  margin-left: -200px;
+  `;
 
 export default Pres

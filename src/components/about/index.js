@@ -21,14 +21,21 @@ function About() {
 }
 
 const Wrapper = styled.div`
-  width: 80%;
+  padding: 50px 20px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
 
 const Profile = styled.img`
   width: 400px;
   border-radius: 5px;
+  @media screen and (max-width: 1200px) {
+    width: 300px;
+  }
 `;
 
 const Content = styled.p`
