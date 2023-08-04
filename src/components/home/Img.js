@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   padding: 20px 0;
   transition: ease-out 0.5s;
   &:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     backdrop-filter: blur(5px);
   }
 }

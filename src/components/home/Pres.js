@@ -49,16 +49,25 @@ const Profile = styled.img`
 const Title = styled.h1`
   opacity: 0;
   margin-left: -200px;
+  @media screen and (max-width: 900px) {
+    margin-left: -340px;
+  }
 `;
 
 const Desc = styled.h3`
   opacity: 0;
   margin-left: -200px;
+  @media screen and (max-width: 900px) {
+    margin-left: -340px;
+  }
 `;
 
 const Btn = styled.button`
   opacity: 0;
   margin-left: -200px;
+  @media screen and (max-width: 900px) {
+    margin-left: -340px;
+  }
   `;
 
 export default Pres

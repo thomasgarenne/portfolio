@@ -17,7 +17,7 @@ function Project() {
       ".grid", 
       {
         opacity: 0,
-        y: -200,
+        y: +200,
       },
       {
        opacity: 1,
