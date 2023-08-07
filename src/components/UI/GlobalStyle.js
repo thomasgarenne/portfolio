@@ -43,6 +43,17 @@ const GlobalStyle = createGlobalStyle`
     input, textarea {
         margin-bottom: 10px;
     }
+
+    form {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        border-radius: 10px;
+        @media screen and (max-width: 700px) {
+          width: 350px;
+        }
+    }
 `;
 
 export default GlobalStyle;
