@@ -27,14 +27,18 @@
     <title>React App</title>
   </head>
   <body>
-    <form name="contact" netlify data-netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" hidden/>
-      <input type="email" name="email" hidden/>
-      <textarea name="message" hidden></textarea>
-    </form>
-
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script type="text/babel">
+      ReactDom.render(
+        <form name="contact" netlify data-netlify-honeypot="bot-field" hidden>
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <textarea name="message" ></textarea>
+        </form>
+      )
+    </script>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
