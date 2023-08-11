@@ -41,14 +41,14 @@ function Project() {
         <h2>Mes projets</h2>
         <Grid className='grid'>
         <Img 
-            link="https://rad-chaja-3eee9a.netlify.app/index.html#aventure"
+            link="https://theridersworkshop.netlify.app/"
             image='./assets/images/theridersworkshop.png'
             title='The riders Workshop' 
             techno={['HTML', 'CSS', 'BOOTSTRAP']}
             description='Site vitrine pour une associations de sport, réalisé en HTML/CSS'
         />
         <Img 
-            link="https://dulcet-gnome-2952a6.netlify.app/"
+            link="https://jeu-de-des-studi.netlify.app/"
             image='./assets/images/dès.png'
             title='Jeu de dés' 
             techno={['HTML', 'CSS', 'JS']}
