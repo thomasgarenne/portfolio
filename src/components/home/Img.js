@@ -2,7 +2,7 @@ import React from 'react'
 
 import styled from 'styled-components'
 
-function Img({ link, image, title, techno, description }) {
+function Img({ link, image, title, techno, description, git }) {
   return (
     <Wrapper className='wrapper'>
         <a href={link}>
@@ -15,6 +15,7 @@ function Img({ link, image, title, techno, description }) {
           })}
         </List>
         <p>{ description }</p>
+        <a href={ git }>Lien github</a>
     </Wrapper>
   )
 }

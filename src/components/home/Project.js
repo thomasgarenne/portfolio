@@ -46,6 +46,7 @@ function Project() {
             title='The riders Workshop' 
             techno={['HTML', 'CSS', 'BOOTSTRAP']}
             description='Site vitrine pour une associations de sport, réalisé en HTML/CSS'
+            git='https://github.com/thomasgarenne/TheRidesWorkshop.git'
         />
         <Img 
             link="https://jeu-de-des-studi.netlify.app/"
@@ -53,6 +54,7 @@ function Project() {
             title='Jeu de dés' 
             techno={['HTML', 'CSS', 'JS']}
             description='Jeu de dès réalisé en Javascript'
+            git='https://github.com/thomasgarenne/JS-DE.git'
         />
         <Img 
             link="https://drivescares-cff0b7bf806a.herokuapp.com/"
@@ -60,13 +62,7 @@ function Project() {
             title='Drivescares' 
             techno={['HTML', 'CSS', 'JS', 'BOOTSTRAP', 'SYMFONY']}
             description='Site web pour un garage automobile avec gestion de contenu, réaliser avec Symfony'
-        />
-        <Img 
-            link="#"
-            image='./assets/images/sampler.png'
-            title='Sampler' 
-            techno={['HTML', 'CSS', 'REACT']}
-            description='Application de musique réalisé avec le framework React'
+            git="https://github.com/thomasgarenne/vparrot.git"
         />
         </Grid>
     </Wrapper >
