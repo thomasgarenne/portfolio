@@ -64,6 +64,14 @@ function Project() {
             description='Site web pour un garage automobile avec gestion de contenu, réaliser avec Symfony'
             git="https://github.com/thomasgarenne/vparrot.git"
         />
+        <Img 
+            link="https://cook-cf9c7f02faaa.herokuapp.com/index.php"
+            image='./assets/images/cook.png'
+            title='Cook' 
+            techno={['HTML', 'CSS', 'JS', 'Fetch']}
+            description='Site web pour ajouter, modifier et supprimer des recettes de cuisine.'
+            git="https://github.com/thomasgarenne/portfolio.git"
+        />
         </Grid>
     </Wrapper >
   )
