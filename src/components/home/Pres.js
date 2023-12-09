@@ -21,7 +21,7 @@ function Pres() {
     <Wrapper ref={wrapper}>
     <div>
       <Title className='un'>Hi ! Je suis Thomas</Title>
-      <Desc className='deux'>Etudiant développeur web full stack</Desc>
+      <Desc className='deux'>Développeur Web Junior</Desc>
       <Link to={"/about"}><Btn className='trois'>Plus à propos de moi</Btn></Link>
     </div>
     <Profile src='./assets/images/profil.png' alt='profile' className='profile' />

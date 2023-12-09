@@ -45,7 +45,7 @@ function Project() {
             image='./assets/images/theridersworkshop.png'
             title='The riders Workshop' 
             techno={['HTML', 'CSS', 'BOOTSTRAP']}
-            description='Site vitrine pour une associations de sport, réalisé en HTML/CSS'
+            description='Site vitrine pour une associations de sport, réalisé avec HTML, CSS et Bootstrap'
             git='https://github.com/thomasgarenne/TheRidesWorkshop.git'
         />
         <Img 
@@ -53,7 +53,7 @@ function Project() {
             image='./assets/images/dès.png'
             title='Jeu de dés' 
             techno={['HTML', 'CSS', 'JS']}
-            description='Jeu de dès réalisé en Javascript'
+            description="Jeu de dès réalisé à l'aide de Javascript"
             git='https://github.com/thomasgarenne/JS-DE.git'
         />
         <Img 
