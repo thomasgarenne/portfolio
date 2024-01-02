@@ -1,4 +1,6 @@
 import React from 'react'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 function Form() {
  
@@ -13,11 +15,19 @@ const handleSubmit = (event) => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString(),
   })
-    .then(() => console.log("Form successfully submitted"))
-    .catch((error) => alert(error));
+    .then(() => {
+      console.log("Form successfully submitted");
+      toast("Message envoyé avec succès !");
+      document.querySelector("form").reset();
+    })
+    .catch((error) => {
+      alert(error);
+      toast("Une erreur est survenue !");
+    });
 };
   return (
     <>
+        <ToastContainer />
         <h1>Formulaire de contact</h1>
 
         <form name="contact" method="POST" onSubmit={handleSubmit}>
