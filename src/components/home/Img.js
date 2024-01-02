@@ -1,21 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import styled from 'styled-components'
 
-function Img({ link, image, title, techno, description, git }) {
+function Img({ id, link, image, title, techno, description, git }) {
   return (
     <Wrapper className='wrapper'>
         <a href={link}>
           <Picture src={ image } alt='Site internet'/>
         </a>
         <h2>{ title }</h2>
+        <p>Langages : </p>
         <List>
-        {techno.map(t => {
-            return <ListItem>{t}</ListItem>
+        {techno.map((t, index) => {
+            return <ListItem key={index}> {t}</ListItem>
           })}
         </List>
-        <p>{ description }</p>
-        <a href={ git }>Lien github</a>
+        <div>
+          <a href={ git }><button>Github</button></a>             
+          <Link to={`/detail/${id}`} state={{ id, image, title, description, techno }}><button>Plus d'infos</button></Link>          
+        </div>
     </Wrapper>
   )
 }
@@ -44,6 +48,8 @@ const ListItem = styled.li`
 `;
 
 const Picture = styled.img`
+width: 400px;
+
 @media screen and (max-width: 900px) {
   width: 300px;
   margin: auto;

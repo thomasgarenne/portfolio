@@ -1,11 +1,26 @@
 import React from 'react'
 
 function Form() {
+ 
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+  
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => console.log("Form successfully submitted"))
+    .catch((error) => alert(error));
+};
   return (
     <>
         <h1>Formulaire de contact</h1>
 
-        <form name="contact" method="POST" action='/'>
+        <form name="contact" method="POST" onSubmit={handleSubmit}>
           <input type="hidden" name="form-name" value="contact"/>
 
           <div>
@@ -24,6 +39,12 @@ function Form() {
           </div>
 
           <button type='submit'>Envoyer</button>
+        </form>
+
+        <form name="contact" netlify="true" netlify-honeypot="bot-field" hidden>
+          <input type="text" name="name" hidden/>
+          <input type="email" name="email" hidden/>
+          <textarea name="message" hidden></textarea>
         </form>
     </>
   )

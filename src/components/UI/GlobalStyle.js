@@ -11,6 +11,8 @@ const GlobalStyle = createGlobalStyle`
     button {
         font-family: Montserrat;
         padding: 10px 20px;
+        margin: 0 10px;
+        width: 160px;
         color: ${(props) => props.theme.mainColor};
         background-color: ${(props) => props.theme.backgroundColor};
         cursor: pointer;
