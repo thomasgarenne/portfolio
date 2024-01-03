@@ -3,12 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Helmet } from 'react-helmet';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Mon Portfolio</title>
+      <meta name="description" content="Bienvenue sur le portfolio de [Votre Nom], développeur web passionné." />
+      <meta name="keywords" content="développeur web, portfolio, compétences, projets, react js" />
+      <meta name="author" content="Dieszirae" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="robots" content="index, follow" />
+    </Helmet>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
