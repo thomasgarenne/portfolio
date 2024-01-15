@@ -3,22 +3,16 @@ import { Link } from 'react-router-dom'
 
 import styled from 'styled-components'
 
-function Img({ id, link, image, title, techno, description, git }) {
+function Img({ id, link, image, title, techno, description, pointFort, git }) {  
   return (
     <Wrapper className='wrapper'>
         <a href={link}>
           <Picture src={ image } alt='Site internet'/>
         </a>
         <h2>{ title }</h2>
-        <p>Langages : </p>
-        <List>
-        {techno.map((t, index) => {
-            return <ListItem key={index}> {t}</ListItem>
-          })}
-        </List>
         <div>
           <a href={ git }><button>Github</button></a>             
-          <Link to={`/detail/${id}`} state={{ id, image, title, description, techno }}><button>Plus d'infos</button></Link>          
+          <Link to={`/detail/${id}`} state={{ id, image, title, description, techno, pointFort }}><button>Plus d'infos</button></Link>          
         </div>
     </Wrapper>
   )
@@ -36,15 +30,6 @@ const Wrapper = styled.div`
     backdrop-filter: blur(5px);
   }
 }
-`;
-
-const List = styled.ul`
-  display: flex;
-  padding-bottom: 10px;
-`;
-
-const ListItem = styled.li`
-  padding-right: 5px;
 `;
 
 const Picture = styled.img`

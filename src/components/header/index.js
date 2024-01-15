@@ -20,6 +20,7 @@ function Header() {
 
 const Wrapper = styled.div`
     height: 80px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;

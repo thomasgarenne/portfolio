@@ -7,13 +7,20 @@ function About() {
     <Wrapper>
       <Profile src='./assets/images/profil.png' alt='profil'/>
       <Content>
-      Au cours de ma formation chez Studi, j'ai développé une expertise solide en HTML pour la structuration sémantique des pages web. Mes compétences en CSS incluent la création de designs attrayants et adaptatifs.
-      J'ai également utilisé Bootstrap pour accélérer le développement avec des composants prédéfinis.<br/>
-      La maîtrise du JavaScript m'a permis de rendre les sites web interactifs, manipuler le DOM, et créer des fonctionnalités améliorant l'expérience utilisateur.
-      J'ai appris React pour développer des interfaces réactives et modulaires.<br/>
-      Côté serveur, j'ai acquis des compétences en PHP pour la création de sites web dynamiques, gestion des bases de données, et développement côté serveur.
-      J'ai également exploré Symfony pour concevoir des applications robustes suivant le modèle MVC.<br/>
-      Grâce à Studi, je suis désormais un développeur web junior compétent et motivé, prêt à contribuer à des projets passionnants tout en continuant à apprendre et à progresser.<br/>
+      <p>
+        Bonjour, je suis Thomas, passionné de sports et d'aventures. Ayant débuté chez Intersport, j'ai évolué vers la gestion d'équipe, perfectionnant mes compétences en service à la clientèle.
+      </p><br/>
+
+      <p>
+        Durant ma formation, j'ai développé une passion pour le développement web avec PHP et Symfony. J'ai créé un site vitrine interactif pour une association sportive,
+        démontrant ma maîtrise des fonctionnalités avancées. J'ai également conçu un site pour un garage automobile, intégrant des notions essentielles de PHP et Symfony,
+        assurant la sécurité des utilisateurs par des mesures telles que l'authentification.
+      </p><br/>
+
+      <p>
+        Actuellement à la recherche d'une opportunité d'alternance pour un Bachelor en Développement d'Applications, mon objectif est d'appliquer mes compétences polyvalentes
+        et mon expérience opérationnelle dans le commerce, tout en acquérant de nouvelles compétences en développement d'applications.
+      </p><br/>
       </Content>
     </Wrapper>
   )

@@ -4,10 +4,12 @@ import styled from 'styled-components'
 
 import Pres from './Pres'
 import Project from './Project'
+import ScrollBarProgess from '../UI/ScrollBarProgess'
 
 function Home() {
   return (
     <Wrapper>
+      <ScrollBarProgess />
       <Pres />
       <Project />
     </Wrapper>

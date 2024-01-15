@@ -26,15 +26,19 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
     }
 
     h1, h2, h3, h4, h5 {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         margin: 20px 0;
     }
 
@@ -55,6 +59,23 @@ const GlobalStyle = createGlobalStyle`
         @media screen and (max-width: 700px) {
           width: 350px;
         }
+    }
+
+    img {
+        border: 1px solid ${(props) => props.theme.mainColor};
+        border-radius: 5px;
+        padding: 5px;
+    }
+    
+    .scroll-progress {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 5px;
+        background-color:  #378d76;
+        transition: width 0.1s ease-out;
     }
 `;
 
